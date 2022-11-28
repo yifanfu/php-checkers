@@ -17,8 +17,8 @@ RUN apk add --no-cache bash && \
     curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.alpine.sh' | bash && \
     apk add symfony-cli
 
-# 
+# Add composer bin to the PATH
 ENV PATH="${COMPOSER_HOME}/vendor/bin:$PATH"
 
+# This will be the directory for application code to map to
 WORKDIR /code
-
