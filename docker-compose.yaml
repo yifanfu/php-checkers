@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  composer:
+    build:
+      context: .
+    environment:
+      COMPOSER_HOME: /opt/composer
+    command:
+      sh
